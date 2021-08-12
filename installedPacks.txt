@@ -1,0 +1,20 @@
+Installed: 
+    expo install @react-navigation/native
+    expo install @react-navigation/stack
+    expo install react-native-screens
+    expo install react-native-reanimated
+    expo install react-native-gesture-handler
+    expo install react-native-safe-area-context
+    expo install @react-native-community/masked-view
+    expo install react-native-elements
+    expo install @react-navigation/material-bottom-tabs
+    expo install react-native-paper
+    expo install react-native-touchable-scale
+    expo install firebase
+    expo install react-native-firebase
+
+    expo install expo-constants
+
+    expo install expo-image-picker
+
+    expo install react-native-gifted-chat

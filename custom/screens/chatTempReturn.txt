@@ -1,0 +1,33 @@
+const sendMessage = () => {
+        setInput("")
+        Keyboard.dismiss()
+        db.collection('chatRooms')
+            .doc(route.params.roomId)
+            .collection('messages')
+            .add({
+                email: auth.currentUser.email,
+                dp: auth.currentUser.photoURL,
+                message: input,
+                timeStamp: firebase.firestore.FieldValue.serverTimestamp()
+            })
+            .then(() => {
+                db
+                .collection('chatRooms')
+                .doc(route.params.roomId)
+                .update({ 
+					lastMessage: input, 
+					lastMessageBy: auth.currentUser.email, 
+					lastMessageTime: firebase.firestore.FieldValue.serverTimestamp()
+				})
+            })
+    }
+
+
+
+
+
+	**************************************************
+
+
+
+
